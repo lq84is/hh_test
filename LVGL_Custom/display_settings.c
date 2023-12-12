@@ -1,5 +1,5 @@
 #include "display_settings.h"
-#include "main_screen.h"
+//#include "main_screen.h"
 #include "AuxFunctions/lv_mem_man.h"
 
 

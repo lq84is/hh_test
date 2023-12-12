@@ -25,7 +25,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "ST7789/core.h"
+#include "ST7789/lv_driver.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -96,14 +97,21 @@ int main(void)
   /* USER CODE END 2 */
 
   /* Call init function for freertos objects (in freertos.c) */
-  MX_FREERTOS_Init();
+  //MX_FREERTOS_Init();
 
   /* Start scheduler */
-  osKernelStart();
+  //osKernelStart();
 
   /* We should never get here as control is now taken by the scheduler */
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  LCD_Init();
+  HAL_Delay(100);
+  POINT_COLOR = BLUE;
+  LCD_ShowString(0,0,240,240,24,"HELLO WORLD");
+  LCD_ShowString(0,32,240,240,24,"Lovelessing...");
+  
+  
   while (1)
   {
     /* USER CODE END WHILE */

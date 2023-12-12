@@ -28,12 +28,12 @@ typedef union{
     char array_c[SIZEOF_PACK32TYPE(display_settings_t)];
 }display_settings_nvm_data_u_aligned4;
 
-extern display_settings_nvm_data_u_aligned4  DisplaySettings;
+//extern display_settings_nvm_data_u_aligned4  DisplaySettings;
 
-#define CURRENT_LANGUAGE (DisplaySettings.members.language)
-#define SCREEN_TIMEOUT_S (DisplaySettings.members.screen_timeout_s)
-#define SCREEN_BRIGHTNES (DisplaySettings.members.brightness)
-#define SCREEN_ROTATION  (DisplaySettings.members.rotation)
+//#define CURRENT_LANGUAGE (DisplaySettings.members.language)
+//#define SCREEN_TIMEOUT_S (DisplaySettings.members.screen_timeout_s)
+//#define SCREEN_BRIGHTNES (DisplaySettings.members.brightness)
+//#define SCREEN_ROTATION  (DisplaySettings.members.rotation)
 
 #define INACTIVE_TIMEOUT_CHECK_MS (5000)
 
